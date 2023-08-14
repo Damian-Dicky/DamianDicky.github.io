@@ -1,0 +1,461 @@
+/* 风格设置，可以查文档 通配符改变所有元素基础的属性 后期会覆盖*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    border: none;
+    font-family: "Smiley_sans", system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-size: 14px;
+    font-family: "Smiley_sans", system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
+}
+
+.page-header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #2c0202;
+    z-index: 1;
+}
+
+.page-header .menu {
+    display: none;
+}
+
+.site-name {
+    color: #af1313;
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+}
+.navigation li {
+    display: inline;
+    padding: 10px 15px;
+}
+
+.navigation li a {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1ad499;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+/* :hover是伪类 */
+.navigation li a:hover {
+    color: #d0ec1a;
+}
+
+.navigation li a.active {
+    color: #d4641a;
+}
+
+.login-button {
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    color: #d41aac;
+    background-color: #4c13af;
+    border-radius: 30px;
+    padding: 12px 36px;
+    border: none;
+    box-shadow: 0 0px 10px #5cb80a;
+    right: 0;
+}
+.page-header .container {
+    position: relative;
+    width: 1350px;
+    height: 90px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 130px;
+    margin-top: 90px;
+}
+.banner h4 {
+    background-color: #176168f4;
+    padding: 10px 20px;
+    border-radius: 7px;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.banner h2 {
+    background-color: #176168f4;
+    padding: 10px 20px;
+    border-radius: 7px;
+    font-size: 48px;
+    margin-bottom: 50px;
+    letter-spacing: 3px;
+}
+
+.banner button {
+    color: rgb(29, 66, 233);
+    background-color: #add810f4;
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    letter-spacing: 3px;
+}
+
+.banner .banner-left {
+    width: 25%;
+    max-width: 250px;
+    min-width: 100px;
+    position: absolute;
+    left: 120px;
+    bottom: 20px;
+}
+
+.banner .banner-right {
+    width: 25%;
+    max-width: 250px;
+    min-width: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 20px;
+}
+
+.sighup {
+    margin-top: 80px;
+    background-color: #a808a3;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.sighup h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #82d6cb;
+    margin-bottom: 30px;
+}
+
+.sighup input {
+    margin: 0 7px;
+    border-radius: 30px;
+    width: 180px;
+    padding: 14px 20px;
+    border: none;
+}
+
+.sighup button {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 7px;
+    background-color: #c4c192;
+    color: #032141;
+    padding: 12px 36px;
+    border: none;
+    border-radius: 60px;
+}
+
+.feature {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-image: linear-gradient(
+            rgba(255, 255, 255, 0.9),
+            rgba(250, 250, 250, 0.9)
+        ),
+        url(./images/humbleswag.jpg);
+}
+
+.feature .container {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 120px 0 65px 0;
+    text-align: center;
+}
+
+.feature h2 {
+    font-size: 30px;
+}
+
+.feature .divider {
+    display: inline-block;
+    margin-top: 10px;
+    width: 50px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #f30303;
+    position: relative;
+    left: 10px;
+}
+
+.feature .divider::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #32bb39;
+    position: absolute;
+    left: -15px;
+}
+
+.feature p {
+    color: #410c0c;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.feature ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.feature ul li {
+    width: 50%;
+    margin-bottom: 50px;
+    padding: 0 15px;
+}
+
+.feature ul li h4 {
+    color: #5b055f;
+}
+
+.feature ul li p {
+    line-height: 30px;
+}
+
+.page-footer {
+    background-color: #123856;
+    color: #b06b04;
+}
+
+.page-footer .top {
+    width: 1140px;
+    padding: 100px 0;
+    display: flex;
+    margin: 0 auto;
+}
+
+.page-footer .top .introduction {
+    flex: 2;
+}
+
+.page-footer .top .course {
+    flex: 1;
+    padding: 0 15px;
+}
+
+.page-footer .top .social-media {
+    flex: 1;
+    padding: 0 15px;
+}
+
+.page-footer .top .contact {
+    width: 96px;
+}
+
+.page-footer h2 {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.page-footer .top .introduction h2 {
+    font-size: 30px;
+}
+
+.page-footer .top .introduction p {
+    color: #e0ebf4;
+    line-height: 24px;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.page-footer ul li {
+    margin-top: 10px;
+    line-height: 24px;
+}
+
+.page-footer ul li a {
+    color: #1ad499;
+    font-size: 14px;
+}
+.page-footer .top .contact img {
+    width: 96px;
+    height: 96px;
+    border-radius: 10px;
+}
+
+.page-footer .bottom {
+    padding: 20px 0;
+    border-top: 1px solid rgb(4, 255, 146);
+}
+
+.page-footer .bottom .container {
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-footer .bottom p {
+    font-size: 14px;
+}
+
+.page-footer .bottom li {
+    display: inline;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 1350px) {
+    .page-header .container {
+        width: 100%;
+    }
+    .site-name {
+        left: 20px;
+    }
+    .login-button {
+        right: 20px;
+    }
+}
+
+@media (max-width: 1140px) {
+    .feature .container,
+    .page-footer .top,
+    .page-footer .bottom .container {
+        width: 100%;
+    }
+
+    .page-footer .top,
+    .page-footer .bottom .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 1460px) {
+    .banner .banner-left,
+    .banner-right {
+        display: none;
+    }
+    .banner h2 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 640px) {
+    .page-header .container {
+        border-bottom: 5px solid rgb(1, 125, 88);
+        height: auto;
+        padding: 20px 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        min-height: 68px;
+    }
+
+    .page-header .navigation {
+        display: none;
+        width: 100%;
+        margin-top: 50px;
+        padding: 20px 0;
+    }
+
+    .page-header .login-button {
+        display: none;
+        position: static;
+    }
+
+    .page-header .login-button {
+        display: none;
+        position: relative;
+    }
+
+    .page-header .site-name {
+        top: 20px;
+    }
+
+    .page-header .menu {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        background-color: rgb(137, 129, 16);
+    }
+
+    .page-header .navigation li {
+        display: block;
+        padding: 15px 0;
+        border-bottom: 3px solid rgb(10, 10, 205);
+    }
+    .page-header .expanded .navigation {
+        display: block;
+    }
+
+    .page-header .expanded .login-button {
+        display: block;
+    }
+
+    .sighup {
+        padding: 40px 0;
+    }
+    .sighup form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sighup input,
+    .sighup button {
+        width: 60%;
+        margin-bottom: 20px;
+    }
+
+    .feature ul li {
+        width: 100%;
+    }
+
+    .page-footer .top {
+        flex-wrap: wrap;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .page-footer .top .introduction {
+        flex: 100%;
+        padding-right: 0;
+        padding-bottom: 20px;
+    }
+
+    .page-footer .top .course {
+        padding-left: 0;
+    }
+}

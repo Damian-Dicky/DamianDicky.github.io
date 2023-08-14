@@ -1,0 +1,39 @@
+
+
+标签 标签的属性
+
+html元素是根
+
+ <h1>一级标题</h1>
+    <h2>二级标题</h2>
+    <p>段落元素有间距</p>
+    <button>按钮</button>
+    <br />
+    <br />
+    <a href="https://baidu.com" target="_blank">超链接 </a>
+    <ul>
+      表单
+      <li>列表的一条</li>
+      <li>列表的一条</li>
+      <li>列表的一条</li>
+      <li>列表的一条</li>
+    </ul>
+    <img src="./images/cover.jpg" width="192" height="192" />
+    <div>块级元素没有间距</div>
+    <div>
+      你好
+      <span>test</span>
+    </div>
+    <span
+      >行内元素根据一个内容占据一块空间
+      <div>test</div>
+    </span>
+    <header>页面的header</header>
+    <article>
+      <header>文章的header</header>
+    </article>
+    <nav>导航适合菜单索引等</nav>
+    <section>独立章节</section>
+<form>表示文档中的一个区域此区域包含交互控件用于向web服务器提交信息</form>
+<input>输入组件</input>
+<script>写事件的标签</script>
